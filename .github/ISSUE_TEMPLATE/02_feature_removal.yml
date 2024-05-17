@@ -1,8 +1,8 @@
-name: 기능 추가
-description: 새로운 기능 추가 요청
-title: '[Feature] '
-labels: ['enhancement']
-assignees: ''
+name: '🗑️ 기능 삭제'
+description: '프로젝트에서 기존 기능을 삭제합니다.'
+title: '[Feature Removal] '
+labels:
+  - 'enhancement'
 
 body:
   - type: markdown
@@ -13,9 +13,9 @@ body:
   - type: input
     id: feature_name
     attributes:
-      label: 기능 이름
-      description: 추가할 기능의 이름을 입력하세요.
-      placeholder: 사용자 로그인 기능
+      label: 삭제할 기능 이름
+      description: 삭제할 기능의 이름을 입력하세요.
+      placeholder: 오래된 대시보드 기능
     validations:
       required: true
 
@@ -23,33 +23,31 @@ body:
     id: feature_description
     attributes:
       label: 기능 설명
-      description: 추가할 기능에 대한 설명을 입력하세요.
-      placeholder: 이 기능은 사용자가 이메일과 비밀번호를 통해 로그인할 수 있도록 합니다.
+      description: 삭제할 기능에 대한 설명을 입력하세요.
+      placeholder: 오래된 대시보드 기능을 삭제합니다.
     validations:
       required: true
 
   - type: textarea
-    id: feature_necessity
+    id: feature_reason
     attributes:
-      label: 필요성
-      description: 이 기능이 왜 필요한지 설명하세요.
-      placeholder: 사용자 인증을 위해 필요합니다.
+      label: 이유
+      description: 이 기능을 삭제하는 이유를 설명하세요.
+      placeholder: 새로운 대시보드로 대체되었습니다.
     validations:
       required: true
 
   - type: checkboxes
-    id: feature_details
+    id: removal_details
     attributes:
-      label: 구현 세부 사항
-      description: 구현할 항목들을 선택하세요.
+      label: 삭제 세부 사항
+      description: 삭제할 항목들을 선택하세요.
       options:
-        - label: 로그인 폼 구현
+        - label: 관련 컴포넌트 제거
           required: true
-        - label: 입력값 유효성 검사
+        - label: 관련 라우트 삭제
           required: true
-        - label: 인증 API와의 연동
-          required: true
-        - label: 오류 메시지 표시
+        - label: 불필요한 스타일 제거
           required: true
 
   - type: textarea
