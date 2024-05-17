@@ -15,7 +15,7 @@ body:
     attributes:
       label: 리팩토링 영역
       description: 리팩토링할 코드의 영역을 입력하세요.
-      placeholder: fetchListings 함수
+      placeholder: 예) React-Router-Dom
     validations:
       required: true
 
@@ -24,7 +24,7 @@ body:
     attributes:
       label: 리팩토링 설명
       description: 리팩토링할 부분에 대한 설명을 입력하세요.
-      placeholder: 코드 가독성 향상을 위해 fetchListings 함수를 리팩토링합니다.
+      placeholder: 예) 이 기능은 라우팅을 처리하는 라이브러리입니다.
     validations:
       required: true
 
@@ -33,7 +33,7 @@ body:
     attributes:
       label: 이유
       description: 리팩토링이 필요한 이유를 설명하세요.
-      placeholder: 코드 가독성 향상 및 유지보수 용이성을 위해 필요합니다.
+      placeholder: 예) Next.js에서 제공하는 디렉토리 기반 라우팅을 사용하기로 결정했습니다.
     validations:
       required: true
 
@@ -43,11 +43,11 @@ body:
       label: 구현 세부 사항
       description: 리팩토링의 세부 사항을 작성해주세요.
       placeholder: |
-        - fetchListings 함수 분리
-        - 중복 코드 제거
-        - 코드 주석 추가
+        1. React-Router-Dom 라이브러리와 관련된 코드를 제거합니다.
+        2. Next.js 프로젝트를 설치합니다.
+        3. 관련 컴포넌트 및 페이지 파일 구조를 변경합니다.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: test_instructions
@@ -55,10 +55,10 @@ body:
       label: 테스트 방법
       description: 리팩토링 후 테스트 방법을 작성해주세요.
       placeholder: |
-        - fetchListings 함수 호출 후 결과 확인
-        - 기존 기능들이 정상적으로 작동하는지 확인
+        - REST 테스트 도구를 사용하여 API 테스트를 수행합니다.
+
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: additional_info

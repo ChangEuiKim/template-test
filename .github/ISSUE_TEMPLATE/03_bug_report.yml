@@ -15,7 +15,7 @@ body:
     attributes:
       label: 버그 요약
       description: 버그에 대한 간략한 설명을 입력하세요.
-      placeholder: 로그인 시도 시 에러 메시지가 표시되지 않음
+      placeholder: 예) 로그인 시도 시 에러 메시지가 표시되지 않음
     validations:
       required: true
 
@@ -25,6 +25,7 @@ body:
       label: 재현 방법
       description: 버그를 재현하는 방법을 단계별로 설명하세요.
       placeholder: |
+        예시)
         1. 로그인 페이지로 이동
         2. 잘못된 자격 증명 입력
         3. '로그인' 버튼 클릭
@@ -37,7 +38,7 @@ body:
     attributes:
       label: 기대 동작
       description: 기대하는 동작을 설명하세요.
-      placeholder: 잘못된 자격 증명을 입력하면 적절한 오류 메시지가 표시되어야 합니다.
+      placeholder: 예) 잘못된 자격 증명을 입력하면 적절한 오류 메시지가 표시되어야 합니다.
     validations:
       required: true
 
