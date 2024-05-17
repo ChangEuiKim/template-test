@@ -1,0 +1,70 @@
+name: 코드 리팩토링
+description: 코드 개선 및 리팩토링 요청
+title: '[Refactor] '
+labels: ['refactor']
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 리팩토링 설명
+
+  - type: input
+    id: refactor_area
+    attributes:
+      label: 리팩토링 영역
+      description: 리팩토링할 코드의 영역을 입력하세요.
+      placeholder: fetchListings 함수
+    validations:
+      required: true
+
+  - type: textarea
+    id: refactor_description
+    attributes:
+      label: 리팩토링 설명
+      description: 리팩토링할 부분에 대한 설명을 입력하세요.
+      placeholder: 코드 가독성 향상을 위해 fetchListings 함수를 리팩토링합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason_for_refactor
+    attributes:
+      label: 이유
+      description: 리팩토링이 필요한 이유를 설명하세요.
+      placeholder: 코드 가독성 향상 및 유지보수 용이성을 위해 필요합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_details
+    attributes:
+      label: 구현 세부 사항
+      description: 리팩토링의 세부 사항을 작성해주세요.
+      placeholder: |
+        - fetchListings 함수 분리
+        - 중복 코드 제거
+        - 코드 주석 추가
+    validations:
+      required: true
+
+  - type: textarea
+    id: test_instructions
+    attributes:
+      label: 테스트 방법
+      description: 리팩토링 후 테스트 방법을 작성해주세요.
+      placeholder: |
+        - fetchListings 함수 호출 후 결과 확인
+        - 기존 기능들이 정상적으로 작동하는지 확인
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 추가 정보
+      description: 추가로 필요한 정보가 있다면 적어주세요.
+      placeholder: 기타 필요한 정보가 있다면 여기에 추가하세요.
+    validations:
+      required: false

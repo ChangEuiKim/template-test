@@ -1,0 +1,71 @@
+name: 기능 추가
+description: 새로운 기능 추가 요청
+title: '[Feature] '
+labels: ['enhancement']
+assignees: ''
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 기능 설명
+
+  - type: input
+    id: feature_name
+    attributes:
+      label: 기능 이름
+      description: 추가할 기능의 이름을 입력하세요.
+      placeholder: 사용자 로그인 기능
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: 기능 설명
+      description: 추가할 기능에 대한 설명을 입력하세요.
+      placeholder: 이 기능은 사용자가 이메일과 비밀번호를 통해 로그인할 수 있도록 합니다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature_necessity
+    attributes:
+      label: 필요성
+      description: 이 기능이 왜 필요한지 설명하세요.
+      placeholder: 사용자 인증을 위해 필요합니다.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: feature_details
+    attributes:
+      label: 구현 세부 사항
+      description: 구현할 항목들을 선택하세요.
+      options:
+        - label: 로그인 폼 구현
+          required: true
+        - label: 입력값 유효성 검사
+          required: true
+        - label: 인증 API와의 연동
+          required: true
+        - label: 오류 메시지 표시
+          required: true
+
+  - type: textarea
+    id: reference_material
+    attributes:
+      label: 참고 자료
+      description: 관련 문서나 레퍼런스 링크를 추가해주세요.
+      placeholder: 참고할 수 있는 자료가 있다면 여기에 추가하세요.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 추가 정보
+      description: 추가로 필요한 정보가 있다면 적어주세요.
+      placeholder: 기타 필요한 정보가 있다면 여기에 추가하세요.
+    validations:
+      required: false
