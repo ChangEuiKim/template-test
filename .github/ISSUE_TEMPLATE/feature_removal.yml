@@ -1,5 +1,5 @@
-name: 기능 삭제
-description: 기존 기능 삭제 요청
+name: '🗑️ 기능 삭제'
+description: '프로젝트에서 기존 기능을 삭제합니다.'
 title: '[Feature Removal] '
 labels: ['enhancement']
 assignees: ''

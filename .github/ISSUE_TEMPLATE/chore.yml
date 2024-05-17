@@ -1,5 +1,5 @@
-name: Chore
-description: 의존성, 환경변수, 빌드 관련 작업 요청
+name: '🔧기타 이슈'
+description: '프로젝트의 의존성, 환경변수, 빌드 관련 등의 작업을 수행합니다.'
 title: '[Chore] '
 labels: ['chore']
 assignees: ''

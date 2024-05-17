@@ -1,5 +1,5 @@
-name: 기능 추가
-description: 새로운 기능 추가 요청
+name: '✨ 기능 추가'
+description: '프로젝트에 새로운 기능을 추가합니다.'
 title: '[Feature] '
 labels: ['enhancement']
 assignees: ''

@@ -1,5 +1,5 @@
-name: 버그 수정
-description: 버그 보고
+name: '🐛 버그 수정'
+description: '프로젝트 실행 중 발생한 버그를 수정합니다.'
 title: '[Bug] '
 labels: ['bug']
 assignees: ''
