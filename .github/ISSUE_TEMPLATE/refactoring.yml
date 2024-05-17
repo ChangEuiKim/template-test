@@ -1,8 +1,8 @@
 name: '🛠️코드 리팩토링'
 description: '코드의 가독성, 유지보수성을 향상시키기 위한 작업을 수행합니다.'
 title: '[Refactor] '
-labels: ['refactor']
-assignees: ''
+labels:
+  - 'refactor'
 
 body:
   - type: markdown

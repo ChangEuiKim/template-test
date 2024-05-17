@@ -1,8 +1,8 @@
 name: '📝 문서 수정'
 description: '프로젝트의 문서에 대한 수정을 요청합니다.'
 title: '[Docs] '
-labels: ['documentation']
-assignees: ''
+labels:
+  - 'documentation'
 
 body:
   - type: markdown
